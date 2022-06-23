@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;					
+public class Program
+{
+	public static void Main()
+	{
+		List<int> opened_ = new List<int>();
+		for (int i = 1; i<101; i++){
+			int num_deliteley = 0;
+			for (int j = 1 ; j<i+1; j++)
+			{
+				if (i % j == 0)
+				num_deliteley +=1;
+			}
+		if (num_deliteley % 2 == 1){
+			Console.WriteLine("подходит"+ i);
+			opened_.Add(i);}
+		}
+	}
+}
